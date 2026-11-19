@@ -55,14 +55,15 @@ Part 2: What does ~/ do?
 The program prints `100` because the setter stores the new battery value, and the getter returns it 
 Part 5
 
-**My prediction:** It prints `0` and then `5`. The negative value is ignored by the setter. `BigBag.add()` adds two items each time, so two calls add four, and then the setter adds one more.
 
-**Real output:**
+Real output:**My prediction: It prints `0` and then `5`.
+
+Real output:
 
 ```text
-0
+1
 5
-```
+
 
 
  
