@@ -53,13 +53,12 @@ class StudentCard extends BusCard {
     _discount = discount;
   }
 
-  @override
   void showInfo() {
     super.showInfo();
     print('Student card: $_discount% off');
   }
 
-  @override
+  
   void pay(int fare) {
     int off = fare * _discount ~/ 100;
     print('Student discount: $off RWF');
@@ -68,18 +67,16 @@ class StudentCard extends BusCard {
 }
 
 void main() {
-  // Replace these example values with your own numbers from your student ID.
-  int d = 37;
-  int l = 7;
-  String myName = 'Your Full Name';
+  
+  int d = 05;
+  int l = 5;
+  String myName = 'احمد محمد سعد';
 
-  if (d == 0) {
-    d = 50;
-  }
+ 
 
-  int startingBalance = 1000 + (d * 10);
-  int busFare = 200 + d;
-  int studentDiscount = 10 + l;
+  int startingBalance = 1050 + (d * 10);
+  int busFare = 205 + d;
+  int studentDiscount = 15%;
 
   print('My numbers: D = $d, L = $l');
   print('Starting balance = $startingBalance RWF');
@@ -87,7 +84,7 @@ void main() {
   print('Student discount = $studentDiscount%');
 
   BusCard card = BusCard(myName, startingBalance);
-  card.owner = 'Al';
+  card.owner = 'احمدون';
   card.showInfo();
 
   card.owner = myName;
