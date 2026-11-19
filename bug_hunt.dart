@@ -22,14 +22,14 @@ class Phone {
   }
 }
 
-class SmartPhone extends Phone {
+class honor extends Phone {
   String _system = '';
 
-  SmartPhone(String brand, int battery, String system) : super(brand, battery) {
+  honor(String brand, int battery, String system) : super(brand, battery) {
     _system = system;
   }
 
-  @override
+  
   void restart() {
     print('Restarting $_system');
   }
